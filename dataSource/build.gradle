@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+
+def deps = rootProject.ext
+
+android {
+    compileSdkVersion deps.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion deps.minSdkVersion
+        targetSdkVersion deps.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def dataDeps = deps.dataNetworkSource
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':common')
+
+    implementation deps.kotlin
+    implementation deps.rxJava
+    implementation deps.rxAndroid
+    implementation dataDeps.retrofit
+    implementation dataDeps.retrofitRxAdapter
+    implementation dataDeps.moshi
+    implementation dataDeps.javaxInject
+    implementation dataDeps.moshiKotlin
+    implementation dataDeps.retrofitMoshi
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+}
+repositories {
+    mavenCentral()
+}

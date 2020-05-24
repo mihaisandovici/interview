@@ -1,0 +1,381 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".candidate.candidateItem.CandidateActivity">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/editableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <ScrollView
+            android:id="@+id/scrollViewCandidate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@id/doneBtn"
+            app:layout_constraintTop_toTopOf="parent">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/newCandidateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/new_candidate"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/app_name_size"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@id/doneButton"
+                    app:layout_constraintTop_toBottomOf="@id/newCandidateTextView"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" >
+
+                            <EditText
+                                android:id="@+id/firstNameEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/firstname"
+                                android:imeOptions="actionNext"
+                                android:textColorHint="@color/colorPrimary"
+                                android:inputType="textPersonName"
+                                android:autofillHints="@string/firstname" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/lastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lastname"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary"
+                            android:inputType="textAutoComplete"
+                            android:autofillHints="@string/lastname"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/phoneNr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/phone_number"
+                            android:autofillHints="@string/phone_number"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary"
+                            android:inputType="phone"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimary"
+                            android:autofillHints="@string/email"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/technicalLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/technical_level"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary"
+                            android:inputType="textAutoComplete"
+                            android:autofillHints="@string/firstname" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/prefTechnologies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/prefered_technologies"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary"
+                            android:inputType="textAutoComplete"
+                            android:autofillHints="@string/prefered_technologies"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/cv"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary"
+                            android:inputType="text"
+                            android:autofillHints="@string/cv"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/candidate_tag_recycler_view_editable"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:scrollbars="vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/tags_profile_background"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/add_tag_for_candidate_btn"
+                            />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/add_tag_for_candidate_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_background"
+                            android:padding="2dp"
+                            android:textColor="@color/colorTextPrimary"
+
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/add_tags"
+                            android:textSize="18sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            />
+                    </android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+
+
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/done"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/uneditableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            android:id="@+id/scrollViewCandidateUneditable"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            >
+            <LinearLayout
+                android:id="@+id/linearUnedit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    >
+                    <TextView
+                        android:id="@+id/firstNameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="30sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@string/lastname"
+                        />
+
+                    <TextView
+                        android:id="@+id/lastNameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="30sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintStart_toStartOf="@string/firstname"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </android.support.constraint.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    >
+                    <TextView
+                        android:id="@+id/technicalLevelText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="21sp"
+                        android:layout_marginTop="8dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/phoneNrText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/emailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+
+                        android:layout_marginTop="8dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/prefTechnologiesText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="21sp"
+                        android:layout_marginTop="8dp"
+
+                        />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/candidate_tag_recycler_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:scrollbars="vertical"
+                        android:background="@drawable/tags_profile_background"
+                        android:layout_marginTop="8dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/cvText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryDark"
+                    android:textSize="21sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    />
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </WebView>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
+

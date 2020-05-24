@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+def deps = rootProject.ext
+
+android {
+    compileSdkVersion deps.compileSdkVersion
+    defaultConfig {
+        applicationId "ibmro.ishqa"
+        minSdkVersion deps.minSdkVersion
+        targetSdkVersion deps.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    def appDeps = deps.app
+
+    implementation project(':dataSource')
+    implementation project(':common')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android:flexbox:0.3.0'
+    implementation deps.kotlin
+    implementation appDeps.appCompatV7
+    implementation appDeps.recyclerView
+    implementation appDeps.design
+    implementation appDeps.constraintLayout
+    implementation appDeps.dagger
+    implementation appDeps.daggerAndroidSupport
+    implementation deps.rxJava
+    implementation deps.rxAndroid
+    implementation appDeps.retrofit
+    implementation appDeps.retrofitRxAdapter
+    implementation appDeps.retrofitMoshi
+    implementation appDeps.moshi
+    implementation appDeps.moshiKotlin
+    implementation appDeps.cardView
+    implementation appDeps.gson
+    implementation appDeps.kotlinRX
+    implementation appDeps.rxViewBinding
+    implementation appDeps.swipeView
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    kapt appDeps.daggerCompiler
+    kapt appDeps.daggerAndroidProcessor
+}

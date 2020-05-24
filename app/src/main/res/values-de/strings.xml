@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ISH Q&amp;A</string>
+    <string name="select_language">Sprache auswählen</string>
+    <string name="german">Deutsch</string>
+    <string name="english">Englisch</string>
+    <string name="language">Sprache</string>
+    <string name="admin">Administrator</string>
+    <string name="manage_interviews_items_describe">Ermöglicht das Erstellen und Aufrechterhalten eines Interviews, um eine Reihe von Fragen zu erstellen</string>
+    <string name="dashboard">Übersichtsseite</string>
+    <string name="learn_items_describe">Lernen im Internet</string>
+    <string name="topics_items_describe">Interviewfragen</string>
+    <string name="ish_items_describe">ISH Fragen und Antworten</string>
+    <string name="manage_interviews_items">Interviews verwalten</string>
+    <string name="learn_items">"Lernen Gegenstände "</string>
+    <string name="ish_items">ISH Artikel</string>
+    <string name="topics_items">Themenartikel</string>
+    <string name="candidate">Kandidat</string>
+    <string name="interviewers">Interviewer</string>
+    <string name="interviews">Interviews</string>
+    <string name="support">Unterstützung</string>
+    <string name="front_end">Frontend</string>
+    <string name="modules">Module</string>
+    <string name="back_end">" Backend"</string>
+    <string name="mobile">" Handy"</string>
+    <string name="git">" Git"</string>
+    <string name="algorithms">" Algorithmen"</string>
+    <string name="design_patterns">Entwurfsmuster</string>
+    <string name="data_structure">" Datenstruktur"</string>
+    <string name="sql">" SQL"</string>
+    <string name="java_script">" Java Script"</string>
+    <string name="swift">" Swift"</string>
+    <string name="ios">" iOS"</string>
+    <string name="Android">" Android"</string>
+    <string name="kotlin">" Kotlin"</string>
+    <string name="java">"Java "</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="nav_header_desc">" Navigation header"</string>
+    <string name="nav_header_subtitle">" android.studio@android.com"</string>
+    <string name="nav_header_title">" Android Studio"</string>
+    <string name="navigation_drawer_close">Navigation drawer schließen</string>
+    <string name="navigation_drawer_open">Navigation drawer öffnen</string>
+    <string name="view_more">" mehr sehen"</string>
+    <string name="please_click_again_exit">Bitte klicken Sie erneut, um zu beenden</string>
+    <string name="title_activity_dashboard">" Übersichtsseite "</string>
+    <string name="search">Suche</string>
+    <string name="splash_screen_img">SplashScreen ImageView</string>
+    <string name="start_now">Jetzt beginnen</string>
+    <string name="finish">Beenden</string>
+    <string name="next">Nächste Seite</string>
+    <string name="icon">Icon</string>
+    <string name="indicator">Indikator</string>
+    <string name="ask">Fragen</string>
+    <string name="delete_q">Löschen?</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="yes">Ja</string>
+    <string name="delete_question_q">Möchten Sie diese Frage löschen?</string>
+    <string name="correct_answer">Richtige Antwort</string>
+    <string name="errror_ocured">Ein Fehler ist aufgetreten</string>
+    <string name="question_has_been_added">Die Frage wurde hinzugefügt</string>
+
+
+    <string name="internal_server_error">Internal Server Error</string>
+
+    <string name="error_mesagge">Fehler</string>
+
+
+    <string name="learn">Lernen</string>
+
+    <string name="manage_interview">Interview führen</string>
+
+    <string name="contribute">Beitragen</string>
+
+    <string name="learn_desc">Lesen Sie Artikel aus dem Internet zu vorgeschlagenen Themen</string>
+
+    <string name="manage_interview_desc">"Ermöglicht das Erstellen und Verwaltung eines Interviews oder das Erstellen eine Reiche von Fragen "</string>
+
+    <string name="contribute_desc">Fragen hinzufügen oder beantworten</string>
+
+    <string name="set_question_text">Fragetext angeben</string>
+    <string name="add_question">Frage hinzufügen</string>
+    <string name="validation_empty">Das Feld ist leer</string>
+    <string name="edit_question">Frage bearbeiten</string>
+    <string name="question">Frage</string>
+    <string name="add_answer">Antwort hinzufügen</string>
+    <string name="add_tags">Tags hinzufügen</string>
+    <string name="set_answer_content">Antwort hinzufügen</string>
+    <string name="answer_deleted">Der Artikel wurde gelöscht</string>
+    <string name="view_question">Frage anzeigen</string>
+    <string name="question_has_been_changed">Die Frage wurde geändert</string>
+    <string name="validate_question_content">Die Frage muss mindestens 3 Zeichen lang sein</string>
+    <string name="validate_tag_list">Die Frage muss mindestens ein Tag haben</string>
+    <string name="validate_correct_answer">Die Frage muss die richtige Antwort haben</string>
+    <string name="all_answer_contain_content">Alle Antworten müssen Text enthalten</string>
+    <string name="validate_have_answer">Die Frage muss mindestens eine Antwort haben</string>
+    <string name="question_has_been_deleted">Die Frage wurde gelöscht</string>
+    <string name="question_is_not_complete">Die Frage ist nicht vollständig</string>
+    <string name="profile">Profil</string>
+    <string name="select_tags">Tags auswählen</string>
+    <string name="select_tags_title">Tags auswählen</string>
+    <string name="lastname">Nachname</string>
+    <string name="firstname">Vorname</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="email">Email</string>
+    <string name="technical_level">Technische Niveau</string>
+    <string name="new_candidate">Neuer Kandidat</string>
+    <string name="tags">Tags</string>
+    <string name="prefered_technologies">"Technologie-Präferenez "</string>
+    <string name="selected_tags">Ihre Interesse sind</string>
+    <string name="name">Name:</string>
+    <string name="anonymous">Anonymous</string>
+
+    <string name="edit_name">Name bearbeiten</string>
+    <string name="edit_photo">Foto bearbeiten</string>
+    <string name="profile_photo">Profilfoto</string>
+    <string name="add_tag">Tag hinzufügen</string>
+    <string name="done">Fertig</string>
+    <string name="deletetag">Tag löschen</string>
+    <string name="questions">Fragen</string>
+    <string name="delete_candidate_question">Möchten Sie diesen Kandidat löschen?</string>
+
+    <string name="duplicate">\tVerdoppeln</string>
+
+    <string name="cv">CV</string>
+    <string name="candidate_has_been_added">Der Kandidat wurde hinzugefügt</string>
+    <string name="add_candidate">Kandidat hinzufügen</string>
+    <string name="interviews_list">Interviewsliste</string>
+
+    <string name="candidate_has_been_changed">Der Kandidat ist geändert.</string>
+    <string name="validate_candidate_content">Nicht alle Feldern sind vollständig</string>
+    <string name="update_candidate">Der Kandidat bearbeiten</string>
+    <string name="list_of_candidates">Kandidatenliste</string>
+    <string name="set_date">Datum angeben</string>
+    <string name="interview_must_have_candidate">Das Interview muss ein kandidat haben</string>
+    <string name="interview_must_have_interviewers">Das Interview muss mindestens ein Interviewer haben</string>
+    <string name="interview_must_have_three_question">Das Interview muss mindestens drei Fragen haben</string>
+    <string name="interview_must_to_hve_one_tag">Das Interview muss mindestens ein Tag haben</string>
+    <string name="interview_must_to_have_date">Das Interview muss ein Datum haben</string>
+    <string name="interiew_is_not_complete">Das Interview ist nicht vollständig.</string>
+    <string name="add_interviewers">Interviewers hinzufügen</string>
+    <string name="interview_must_to_have_interviewers">Das Interview muss mindestens ein Interviewer haben</string>
+    <string name="interview_was_saved">Interview was saved</string>
+
+    <string name="delete_candidate">Kandidat löschen</string>
+    <string name="candidate_has_been_deleted">Der Kandidat wurde gelöscht</string>
+    <string name="validate_tag_list_for_candidate">Der Kandidat muss mindestens ein Tag haben</string>
+    <string name="view_candidate">Kandidat ansehen</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="strongly_disagree">Sehr zutreffend</string>
+    <string name="disagree">Unzutreffend</string>
+    <string name="neither_agree_not_disagree">Teils zutreffend, teils unzutreffend</string>
+    <string name="agree">Zutreffend</string>
+    <string name="strongly_agree">Völlig zutreffend</string>
+    <string name="no_items">KEINE GEGENSTÄNDE</string>
+    <string name="ask_desc">Stellen Sie Fragen zu ISH oder yu den Technologien, die Sie interessieren</string>
+
+    <string name="validate_preferred_technologies">Der Kandidat muss mindestens ein Technologie-Präferenez haben</string>
+    <string name="validate_candidate_lastname">Der Nachname ist viel zu kurz.</string>
+    <string name="validate_candidate_firstname">Der Vorname ist viel zu kurz.</string>
+    <string name="validate_candidate_email">Das Email ist viel zu kurz.</string>
+    <string name="validate_candidate_phoneNr">Der Nachname ist viel zu kurz.</string>
+    <string name="validate_candidate_technicalLvl">Der Kandidat hat kein technisches Niveau</string>
+    <string name="candidate_is_not_complete">Der Kandidat ist nicht vollständig.</string>
+    <string name="add_prefTech">Technologie-Präferenez hinzufügen</string>
+
+    <!--interview-->
+    <string name="add_interview">Add Interview</string>
+    <string name="duplicate_interview">Duplicate Interview</string>
+    <string name="edit_interview">Edit Interview</string>
+    <string name="interview">Interview</string>
+
+
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutProfilePic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/relativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/profile_photo"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@id/profilePicBottom"
+            app:layout_constraintEnd_toEndOf="@id/guidelineProfilePicEnd"
+            app:layout_constraintStart_toEndOf="@id/guidelineProfilePicStart"
+            app:layout_constraintTop_toTopOf="@id/profilePicTop"
+            app:srcCompat="@drawable/account" />
+
+        <ImageButton
+            android:id="@+id/addPicture"
+            android:layout_width="51dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle"
+            android:contentDescription="@string/edit_photo"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/profilePicture"
+            app:layout_constraintEnd_toStartOf="@id/guidelineProfilePicEnd"
+            app:layout_constraintHorizontal_bias="0.921"
+            app:layout_constraintStart_toStartOf="@+id/profilePicture"
+            app:srcCompat="@drawable/add_photo" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/profilePicTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/profilePicBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineProfilePicStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineProfilePicEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/doneButton"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutProfilePic">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/anonymous"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/app_name_size"
+
+            />
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/name"
+            android:background="@drawable/circle"
+            android:contentDescription="@string/edit_name"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/edit" />
+
+    </RelativeLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/doneButton"
+            >
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selected_tags"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/content_textsize"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@id/tagView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/tagView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description"
+               >
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/profile_tag_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/tags_profile_background"
+                    android:scrollbars="vertical"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/addTagButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/add_tag"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/add_tag"
+       />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".45"
+            />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9"
+         />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-45dp"
+            android:text="@string/done"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
